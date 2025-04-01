@@ -13,15 +13,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="main.html" class="listitem">Inicio</a></li>
-      <li><a href="downloads.html" class="listitem">Descargas</a></li>
-      <li><a href="aboutus.html" class="listitem">Nosotros</a></li>
-      <li><a href="contactus.html" class="listitem">Contactanos
-      </a></li>
-    </ul>
-  </nav>
+  <button id="menu-toggle" class="menu-button">Menú</button>
+    <nav id="navbar" class="hidden">
+        <ul>
+          <li><a href="main.html" class="listitem">Inicio</a></li>
+          <li><a href="downloads.html" class="listitem">Descargas</a></li>
+          <li><a href="aboutus.html" class="listitem">Nosotros</a></li>
+          <li><a href="contactus.html" class="listitem">Contactanos</a></li>
+        </ul>
+    </nav>
+    
     <div id="main-content">
       <div class="container">
         <h1 class="tit">¿Cuál es tu próxima parada?🧑‍🚀</h1>
@@ -44,4 +45,12 @@
         Este software y su documentación relacionada están protegidos por derechos de autor. No se permite la reproducción, distribución o modificación sin el consentimiento expreso por escrito del titular de los derechos de autor, salvo en los casos permitidos por la ley.
         </p>
 </footer>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar');
+
+  menuToggle.addEventListener('click', () => {
+      navbar.classList.toggle('hidden');
+  });
+</script>
 </html>
