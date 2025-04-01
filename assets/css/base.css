@@ -1,48 +1,45 @@
-/* base.css */
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: visible;
-  }
-  @keyframes slideIn {
-    0% {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  color: white;
+}
+
+@keyframes slideIn {
+  0% {
       transform: translateX(-100%);
       opacity: 0;
-    }
-    100% {
+  }
+  100% {
       transform: translateX(0);
       opacity: 1;
-    }
   }
-  .listitem{
-    font-size: 30px;
-    color: white;
-    font-family: Impact;
-  }
-  
-  .tit {
-    font-size: 100px;
-    font-weight: bold;
-    color: black;
-    animation: slideIn 2s ease-out;
-    font-family: Rochester;
-  }
-  
-  /* Fondo negro con degradado */
-  body {
-    background: linear-gradient(180deg, #000000, #434343);
-    font-family: Arial, sans-serif;
-    color: black;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+}
 
-  /* Estilos básicos para el navbar */
-  /* Navbar con más estilo */
+.listitem {
+  font-size: 30px;
+  color: white;
+  font-family: Impact;
+}
+
+.tit {
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  animation: slideIn 2s ease-out;
+  font-family: Rochester;
+}
+
+body {
+  background: linear-gradient(180deg, #000000, green);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 nav {
   background-color: rgba(51, 51, 51, 0.8);
   padding: 15px 20px;
@@ -88,14 +85,43 @@ nav ul li a:hover {
   background-color: black;
   color: white;
   padding: 5%;
-  width: 100%; /* Evita que se desborde */
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
-  gap: 20px; /* Espacio entre columnas */
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .column {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.1); /* Opcional para resaltar */
-  border-radius: 10px; /* Esquinas redondeadas */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .tit {
+      font-size: 50px;
+      text-align: center;
+  }
+
+  .listitem {
+      font-size: 20px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin-bottom: 10px;
+  }
+
+  .info-container {
+      grid-template-columns: 1fr; /* Una sola columna en móviles */
+      text-align: center;
+  }
+
+  .column {
+      padding: 15px;
+  }
 }

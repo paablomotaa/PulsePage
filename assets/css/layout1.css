@@ -1,28 +1,44 @@
-/* layout.css */
-
 .container {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 300px;
-  background: linear-gradient(to right, green, gray);
+  padding: 100px; /* Reducido para evitar problemas en móviles */
   border-radius: 10px;
-  margin-top: 40%;
+  margin-top: 15%;
+  max-width: 90%; /* Para que no se desborde en pantallas pequeñas */
 }
-  
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* 📱 Estilos para móviles */
+@media (max-width: 768px) {
+  .container {
+    padding: 40px; /* Reduce el padding */
+    margin-top: 5%;
+    width: 100%;
+  }
+
   h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
+    font-size: 2rem; /* Reduce tamaño del título */
   }
 
   p {
-    font-size: 1.2rem;
-    margin-bottom: 25px;
+    font-size: 1rem;
   }
+}
 
-  .hidden {
-    display: none;
-  }
   

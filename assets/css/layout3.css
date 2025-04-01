@@ -1,27 +1,41 @@
-/* layout2.css */
-
 .container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 300px;
-    background: linear-gradient(to right, green, gray);
-    border-radius: 10px;
-    margin-top: 10%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  border-radius: 10px;
+  margin-top: 10%;
+  max-width: 90%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 40px;
+      margin-top: 5%;
+      width: 100%;
   }
-    
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 15px;
-    }
-  
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 25px;
-    }
-  
-    .hidden {
-      display: none;
-    }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+}
