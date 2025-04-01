@@ -1,0 +1,101 @@
+/* base.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .listitem{
+    font-size: 30px;
+    color: white;
+    font-family: Impact;
+  }
+  
+  .tit {
+    font-size: 100px;
+    font-weight: bold;
+    color: black;
+    animation: slideIn 2s ease-out;
+    font-family: Rochester;
+  }
+  
+  /* Fondo negro con degradado */
+  body {
+    background: linear-gradient(180deg, #000000, #434343);
+    font-family: Arial, sans-serif;
+    color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Estilos básicos para el navbar */
+  /* Navbar con más estilo */
+nav {
+  background-color: rgba(51, 51, 51, 0.8);
+  padding: 15px 20px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  position: fixed;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: black;
+  transform: translateY(-2px);
+  background: linear-gradient(45deg, green, green);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.info-container {
+  background-color: black;
+  color: white;
+  padding: 5%;
+  width: 100%; /* Evita que se desborde */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  gap: 20px; /* Espacio entre columnas */
+}
+
+.column {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* Opcional para resaltar */
+  border-radius: 10px; /* Esquinas redondeadas */
+}

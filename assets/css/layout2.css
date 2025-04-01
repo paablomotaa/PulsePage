@@ -1,0 +1,27 @@
+/* layout2.css */
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 300px;
+    background: linear-gradient(to right, green, gray);
+    border-radius: 10px;
+  }
+    
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+  
+    .hidden {
+      display: none;
+    }
+    
