@@ -41,4 +41,12 @@ p {
   }
 }
 
-  
+footer {
+  margin-top: 10%;
+  text-align: center;
+  padding: 20px;
+  background-color:black; /* Color de fondo para diferenciarlo */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
