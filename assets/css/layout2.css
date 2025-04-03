@@ -44,8 +44,27 @@ footer {
   margin-top: 10%;
   text-align: center;
   padding: 20px;
-  background-color:black; /* Color de fondo para diferenciarlo */
+  background-color:black;
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+.Etiqueta{
+  background-color: black;
+  border: 5px solid white;
+  padding: 10%;
+}
+
+
+.ImagenPerfil{
+  margin-bottom: 20px;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+i {
+  margin-right: 8px;
+  color: white;
+  font-size: 16px;
 }

@@ -2,8 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: visible;
   color: white;
+  align-items: center;
+  align-content: center;
+  align-self: center;
 }
 
 @keyframes slideIn {
@@ -24,7 +26,7 @@
 }
 
 .tit {
-  font-size: 100px;
+  font-size: clamp(40px, 8vw, 100px);
   font-weight: bold;
   color: white;
   animation: slideIn 2s ease-out;
@@ -53,9 +55,8 @@ nav {
 }
 
 nav ul {
+  display: flex;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
