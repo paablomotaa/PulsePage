@@ -4,10 +4,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px; /* Reducido para evitar problemas en móviles */
+  padding: 100px; 
   border-radius: 10px;
   margin-top: 15%;
-  max-width: 90%; /* Para que no se desborde en pantallas pequeñas */
+  max-width: 100%; 
 }
 
 h1 {
